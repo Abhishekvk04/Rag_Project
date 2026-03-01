@@ -1,0 +1,140 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-28T18:33:36.886981",
+    "total_questions": 12,
+    "single_hop": 10,
+    "multi_hop": 2,
+    "cross_doc": 0
+  },
+  "questions": [
+    {
+      "question": "What type of tools are mentioned in the project overview as being used for real-time sales analysis?",
+      "answer": "interactive tools",
+      "difficulty": "easy",
+      "question_type": "factual",
+      "source_section": "Project Overview",
+      "source_pages": "7-7",
+      "hop_type": "single",
+      "id": "single_1"
+    },
+    {
+      "question": "What type of data analysis will be expanded upon in future recommendations?",
+      "answer": "customer sentiment data",
+      "difficulty": "easy",
+      "question_type": "factual",
+      "source_section": "Key Findings",
+      "source_pages": "4-4",
+      "hop_type": "single",
+      "id": "single_2"
+    },
+    {
+      "question": "What Python library was used for data cleaning?",
+      "answer": "Python libraries",
+      "difficulty": "easy",
+      "question_type": "factual",
+      "source_section": "Recommendations",
+      "source_pages": "5-5",
+      "hop_type": "single",
+      "id": "single_3"
+    },
+    {
+      "question": "What type of data analysis will future recommendations focus on expanding to include?",
+      "answer": "customer sentiment data",
+      "difficulty": "easy",
+      "question_type": "factual",
+      "source_section": "Key Findings",
+      "source_pages": "4-4",
+      "hop_type": "single",
+      "id": "single_4"
+    },
+    {
+      "question": "What type of software is used for interactive visualizations?",
+      "answer": "Tableau",
+      "difficulty": "easy",
+      "question_type": "factual",
+      "source_section": "Appendices",
+      "source_pages": "6-6",
+      "hop_type": "single",
+      "id": "single_5"
+    },
+    {
+      "question": "What type of data analysis will be expanded on in the future?",
+      "answer": "Customer sentiment data",
+      "difficulty": "easy",
+      "question_type": "factual",
+      "source_section": "Key Findings",
+      "source_pages": "4-4",
+      "hop_type": "single",
+      "id": "single_6"
+    },
+    {
+      "question": "What was the percentage of sales growth from February to June?",
+      "answer": "15%",
+      "difficulty": "easy",
+      "question_type": "factual",
+      "source_section": "Monthly Sales Performance",
+      "source_pages": "2-2",
+      "hop_type": "single",
+      "id": "single_7"
+    },
+    {
+      "question": "What type of visualization does Tableau offer?",
+      "answer": "interactive visualizations",
+      "difficulty": "easy",
+      "question_type": "factual",
+      "source_section": "Appendices",
+      "source_pages": "6-6",
+      "hop_type": "single",
+      "id": "single_8"
+    },
+    {
+      "question": "What tools are used for data extraction and cleaning in the Sales Analysis Report?",
+      "answer": "SQL and Python",
+      "difficulty": "easy",
+      "question_type": "factual",
+      "source_section": "Sales Analysis Report",
+      "source_pages": "1-1",
+      "hop_type": "single",
+      "id": "single_9"
+    },
+    {
+      "question": "What type of tools are mentioned for real-time sales analysis?",
+      "answer": "interactive tools",
+      "difficulty": "easy",
+      "question_type": "factual",
+      "source_section": "Project Overview",
+      "source_pages": "7-7",
+      "hop_type": "single",
+      "id": "single_10"
+    },
+    {
+      "question": "What techniques are used to prepare data for analysis and visualization in this sales analysis project?",
+      "answer": "The project uses a combination of Python libraries for data cleaning, pivot tables for data analysis, automated reports for regular reporting, dynamic dashboards for interactive visualizations, Tableau for interactive reporting, and predictive modeling for sales forecasting.",
+      "reasoning": "This answer combines information from sections 1 (Recommendations), 2 (Appendices), and 3 (Sales Analysis Report) to provide a comprehensive overview of the data preparation techniques used in the project.",
+      "difficulty": "medium",
+      "question_type": "synthesis",
+      "source_sections": [
+        "Recommendations",
+        "Appendices",
+        "Sales Analysis Report"
+      ],
+      "hop_type": "multi",
+      "num_hops": 3,
+      "id": "multihop_1"
+    },
+    {
+      "question": "What are some key features of the software that enable real-time sales analysis and customer segmentation, based on the automation of weekly reporting and predictive modeling?",
+      "answer": "The software includes interactive tools for real-time sales analysis, automated reporting systems, and deployment procedures. It also enables predictive modeling with high accuracy and creates interactive dashboards for real-time monitoring. Additionally, it can be expanded to include customer sentiment data through further analysis, and machine learning models can be developed for customer segmentation.",
+      "reasoning": "This answer combines information from Section 1 (Project Overview) about the software's features, Section 2 (Key Findings) about the automation of weekly reporting and predictive modeling, and future recommendations for expanding analysis to include customer sentiment data.",
+      "difficulty": "medium",
+      "question_type": "synthesis",
+      "source_sections": [
+        "Project Overview",
+        "Key Findings"
+      ],
+      "hop_type": "multi",
+      "num_hops": 2,
+      "id": "multihop_3"
+    }
+  ]
+}
