@@ -377,10 +377,10 @@ def main():
         tree_paths = args.tree
     else:
         # Auto-discover from results directory
-        pattern = os.path.join(args.tree_dir, '*_structure.json')
+        pattern = os.path.join(args.tree_dir, '*_structure1.json')
         tree_paths = glob.glob(pattern)
         if not tree_paths:
-            print(f"❌ No *_structure.json files found in '{args.tree_dir}'")
+            print(f"❌ No *_structure1.json files found in '{args.tree_dir}'")
             print("   Run 'python run_pageindex.py --pdf_path pdfs/<your.pdf>' first")
             return
     

@@ -1,0 +1,202 @@
+[
+  {
+    "total_page_number": 7
+  },
+  {
+    "total_token": 1046
+  },
+  {
+    "toc_content": "Page 1\n Sales Analysis Report\n \nExecutive Summary\nThis comprehensive sales analysis report covers a two-month period of company sales data, identifying\nkey trends, opportunities, and recommendations for growth optimization.\nMethodology\n\u007f Data extraction and cleaning using SQL and Python\n\u007f Advanced Excel analysis for pattern recognition\n\u007f Tableau visualization for interactive reporting\n\u007f Predictive modeling for sales forecasting\nMonthly Sales Performance\nMonth\nTotal Revenue\nJan\n$308,000\nFeb\n$354,200\nMar\n$407,330\nApr\n$468,430\nMay\n$538,694\nJun\n$619,500\nProduct Performance\nProduct\nSales\nProd A\n250,000\nProd B\n200,000\nProd C\n150,000\nProd D\n100,000\nSales Growth Trends\n\u007f January: Stable start, focus on retaining holiday season customers.\nPage 2\n\u007f February: 15% growth, introduction of new marketing campaigns.\n\u007f March: 15% growth, strong performance in the northern region.\n\u007f April: 15% growth, successful cross-selling initiatives.\n\u007f May: 15% growth, seasonal promotions boosted sales.\n\u007f June: 15% growth, record-breaking month.\nPage 3\nKey Findings\nSales Performance\n\u007f Overall revenue growth of 15% compared to the previous period\n\u007f Identified top 3 performing products contributing to 65% of total revenue\n\u007f Peak sales periods occurring during mid-month and month-end\nCustomer Behavior\n\u007f Average customer transaction value increased by 12%\n\u007f Customer retention rate improved to 78%\n\u007f Most successful products in terms of repeat purchases identified\nMarket Trends\n\u007f Seasonal patterns indicating stronger performance during weekends\n\u007f Geographic analysis showing strongest markets in urban areas\n\u007f Competitive analysis revealing market share growth opportunities\nRecommendations\n1. Inventory Optimization\n\u007f Adjust stock levels based on predicted demand\n\u007f Implement an automated reordering system\n\u007f Focus on high-margin products\n2. Marketing Strategy\n\u007f Target promotional activities during identified peak periods\n\u007f Develop a customer loyalty program\n\u007f Increase focus on high-performing geographic areas\n3. Operational Improvements\n\u007f Automate regular reporting processes\n\u007f Implement real-time sales monitoring\n\u007f Develop a KPI dashboard for management\nImplementation Results\nPage 4\n\u007f Successfully automated weekly reporting saving 10 hours per week\n\u007f Implemented predictive modeling with 85% accuracy\n\u007f Created interactive dashboards for real-time monitoring\nFuture Recommendations\n\u007f Expand analysis to include customer sentiment data\n\u007f Develop machine learning models for customer segmentation\n\u007f Implement A/B testing for marketing strategies\nPage 5\nAppendices\n\u007f Detailed methodology documentation\n\u007f Data cleaning procedures\n\u007f Statistical analysis results\n\u007f Visualization gallery\nSales Analysis Project Documentation\nProject Overview\nDocumentation of the complete workflow and processes used in the sales analysis project, covering\ndata collection through final presentation.\n1. Data Collection & Preparation\n1.1 Data Sources\nSELECT\n date,\n product_id,\n customer_id,\n sales_amount,\n quantity\nFROM sales_transactions\nWHERE date BETWEEN '2024-01-01' AND '2024-02-29'\n1.2 Data Cleaning (Python)\nimport pandas as pd\nimport numpy as np\ndef clean_sales_data(df):\n # Remove duplicates\n df = df.drop_duplicates()\n # Handle missing values\n df['sales_amount'] = df['sales_amount'].fillna(0)\n # Convert dates\n df['date'] = pd.to_datetime(df['date'])\n return df\nPage 6\n2. Analysis Process\n2.1 Excel Analysis\n\u007f Created pivot tables for initial data exploration\n\u007f Developed automated reports using Excel macros\n\u007f Implemented dynamic dashboards\n2.2 Python Analysis\n# Sales trend analysis\nmonthly_sales = df.groupby(df['date'].dt.month)['sales_amount'].sum()\n# Customer segmentation\ndef segment_customers(df):\n return df.groupby('customer_id').agg({\n  'sales_amount': ['sum', 'mean', 'count'],\n  'product_id': 'nunique'\n })\n2.3 Visualization (Tableau)\n\u007f Created interactive dashboards\n\u007f Set up automated data refresh\n\u007f Developed custom calculations\n3. Quality Assurance\n3.1 Data Validation\n\u007f Cross-referenced data with source systems\n\u007f Performed statistical tests for accuracy\n\u007f Validated calculations with manual checks\n3.2 Performance Testing\n\u007f Optimized SQL queries for faster execution\n\u007f Tested dashboard performance\n\u007f Validated automated reports\n4. Deliverables\n4.1 Regular Reports\n\u007f Daily sales summaries\n\u007f Weekly trend analysis\nPage 7\n\u007f Monthly performance reports\n4.2 Interactive Tools\n\u007f Real-time sales dashboard\n\u007f Custom analysis tools\n\u007f Automated reporting system\n5. Implementation\n5.1 Deployment Process\n\u007f Set up automated data pipelines\n\u007f Implemented monitoring systems\n\u007f Created user documentation\n5.2 Training\n\u007f Conducted user training sessions\n\u007f Created reference materials\n\u007f Provided ongoing support\n6. Maintenance\n6.1 Regular Updates\n\u007f Weekly data validation\n\u007f Monthly system checks\n\u007f Quarterly performance reviews\n6.2 Documentation Updates\n\u007f Process documentation\n\u007f User guides\n\u007f Technical specifications\n",
+    "toc_page_list": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "page_index_given_in_toc": "yes"
+  },
+  {
+    "message": "toc_with_page_number: [{'structure': '1.0', 'title': 'Executive Summary', 'page': 1}, {'structure': '2.0', 'title': 'Methodology', 'page': 1}, {'structure': '3.0', 'title': 'Monthly Sales Performance', 'page': 1}, {'structure': '4.0', 'title': 'Product Performance', 'page': 1}, {'structure': '5.0', 'title': 'Sales Growth Trends', 'page': 1}, {'structure': '6.0', 'title': 'Key Findings', 'page': 2}, {'structure': '7.0', 'title': 'Customer Behavior', 'page': 2}, {'structure': '8.0', 'title': 'Market Trends', 'page': 2}, {'structure': '9.0', 'title': 'Recommendations', 'page': 3}, {'structure': '10.0', 'title': 'Implementation Results', 'page': 4}, {'structure': '11.0', 'title': 'Future Recommendations', 'page': 5}, {'structure': '12.0', 'title': 'Appendices', 'page': 5}, {'structure': '13.0', 'title': 'Sales Analysis Project Documentation', 'page': 6}, {'structure': '14.0', 'title': 'Project Overview', 'page': 6}, {'structure': '15.0', 'title': 'Data Collection & Preparation', 'page': 7}, {'structure': '16.0', 'title': 'Analysis Process', 'page': 7}, {'structure': '17.0', 'title': 'Quality Assurance', 'page': 8}, {'structure': '18.0', 'title': 'Deliverables', 'page': 9}, {'structure': '19.0', 'title': 'Implementation', 'page': 10}, {'structure': '20.0', 'title': 'Maintenance', 'page': 11}]"
+  },
+  {
+    "message": "toc_with_physical_index: [{'structure': '1.0', 'title': 'Executive Summary', 'physical_index': '<physical_index_1>'}, {'structure': '2.0', 'title': 'Methodology', 'physical_index': '<physical_index_2>'}, {'structure': '3.0', 'title': 'Monthly Sales Performance', 'physical_index': '<physical_index_3>'}, {'structure': '4.0', 'title': 'Product Performance', 'physical_index': '<physical_index_4>'}, {'structure': '5.0', 'title': 'Sales Growth Trends', 'physical_index': '<physical_index_5>'}, {'structure': '6.0', 'title': 'Key Findings', 'physical_index': '<physical_index_6>'}, {'structure': '7.0', 'title': 'Customer Behavior', 'physical_index': '<physical_index_7>'}, {'structure': '8.0', 'title': 'Market Trends', 'physical_index': '<physical_index_8>'}, {'structure': '9.0', 'title': 'Recommendations', 'physical_index': '<physical_index_9>'}, {'structure': '10.0', 'title': 'Implementation Results', 'physical_index': '<physical_index_10>'}, {'structure': '11.0', 'title': 'Future Recommendations', 'physical_index': '<physical_index_11>'}, {'structure': '12.0', 'title': 'Appendices', 'physical_index': '<physical_index_12>'}, {'structure': '13.0', 'title': 'Sales Analysis Project Documentation', 'physical_index': '<physical_index_13>'}, {'structure': '14.0', 'title': 'Project Overview', 'physical_index': '<physical_index_14>'}, {'structure': '15.0', 'title': 'Data Collection & Preparation', 'physical_index': '<physical_index_15>'}, {'structure': '16.0', 'title': 'Analysis Process', 'physical_index': '<physical_index_16>'}, {'structure': '17.0', 'title': 'Quality Assurance', 'physical_index': '<physical_index_17>'}, {'structure': '18.0', 'title': 'Deliverables', 'physical_index': '<physical_index_18>'}, {'structure': '19.0', 'title': 'Implementation', 'physical_index': '<physical_index_19>'}, {'structure': '20.0', 'title': 'Maintenance', 'physical_index': '<physical_index_20>'}]"
+  },
+  {
+    "message": "toc_with_physical_index: [{'structure': '1.0', 'title': 'Executive Summary', 'physical_index': 1}, {'structure': '2.0', 'title': 'Methodology', 'physical_index': 2}, {'structure': '3.0', 'title': 'Monthly Sales Performance', 'physical_index': 3}, {'structure': '4.0', 'title': 'Product Performance', 'physical_index': 4}, {'structure': '5.0', 'title': 'Sales Growth Trends', 'physical_index': 5}, {'structure': '6.0', 'title': 'Key Findings', 'physical_index': 6}, {'structure': '7.0', 'title': 'Customer Behavior', 'physical_index': 7}, {'structure': '8.0', 'title': 'Market Trends', 'physical_index': 8}, {'structure': '9.0', 'title': 'Recommendations', 'physical_index': 9}, {'structure': '10.0', 'title': 'Implementation Results', 'physical_index': 10}, {'structure': '11.0', 'title': 'Future Recommendations', 'physical_index': 11}, {'structure': '12.0', 'title': 'Appendices', 'physical_index': 12}, {'structure': '13.0', 'title': 'Sales Analysis Project Documentation', 'physical_index': 13}, {'structure': '14.0', 'title': 'Project Overview', 'physical_index': 14}, {'structure': '15.0', 'title': 'Data Collection & Preparation', 'physical_index': 15}, {'structure': '16.0', 'title': 'Analysis Process', 'physical_index': 16}, {'structure': '17.0', 'title': 'Quality Assurance', 'physical_index': 17}, {'structure': '18.0', 'title': 'Deliverables', 'physical_index': 18}, {'structure': '19.0', 'title': 'Implementation', 'physical_index': 19}, {'structure': '20.0', 'title': 'Maintenance', 'physical_index': 20}]"
+  },
+  {
+    "message": "matching_pairs: [{'title': 'Customer Behavior', 'page': 2, 'physical_index': 7}, {'title': 'Market Trends', 'page': 2, 'physical_index': 8}, {'title': 'Recommendations', 'page': 3, 'physical_index': 9}, {'title': 'Implementation Results', 'page': 4, 'physical_index': 10}, {'title': 'Future Recommendations', 'page': 5, 'physical_index': 11}, {'title': 'Appendices', 'page': 5, 'physical_index': 12}, {'title': 'Sales Analysis Project Documentation', 'page': 6, 'physical_index': 13}, {'title': 'Project Overview', 'page': 6, 'physical_index': 14}, {'title': 'Data Collection & Preparation', 'page': 7, 'physical_index': 15}, {'title': 'Analysis Process', 'page': 7, 'physical_index': 16}, {'title': 'Quality Assurance', 'page': 8, 'physical_index': 17}, {'title': 'Deliverables', 'page': 9, 'physical_index': 18}, {'title': 'Implementation', 'page': 10, 'physical_index': 19}, {'title': 'Maintenance', 'page': 11, 'physical_index': 20}]"
+  },
+  {
+    "message": "offset: 9"
+  },
+  {
+    "message": "toc_with_page_number: [{'structure': '1.0', 'title': 'Executive Summary', 'physical_index': 10}, {'structure': '2.0', 'title': 'Methodology', 'physical_index': 10}, {'structure': '3.0', 'title': 'Monthly Sales Performance', 'physical_index': 10}, {'structure': '4.0', 'title': 'Product Performance', 'physical_index': 10}, {'structure': '5.0', 'title': 'Sales Growth Trends', 'physical_index': 10}, {'structure': '6.0', 'title': 'Key Findings', 'physical_index': 11}, {'structure': '7.0', 'title': 'Customer Behavior', 'physical_index': 11}, {'structure': '8.0', 'title': 'Market Trends', 'physical_index': 11}, {'structure': '9.0', 'title': 'Recommendations', 'physical_index': 12}, {'structure': '10.0', 'title': 'Implementation Results', 'physical_index': 13}, {'structure': '11.0', 'title': 'Future Recommendations', 'physical_index': 14}, {'structure': '12.0', 'title': 'Appendices', 'physical_index': 14}, {'structure': '13.0', 'title': 'Sales Analysis Project Documentation', 'physical_index': 15}, {'structure': '14.0', 'title': 'Project Overview', 'physical_index': 15}, {'structure': '15.0', 'title': 'Data Collection & Preparation', 'physical_index': 16}, {'structure': '16.0', 'title': 'Analysis Process', 'physical_index': 16}, {'structure': '17.0', 'title': 'Quality Assurance', 'physical_index': 17}, {'structure': '18.0', 'title': 'Deliverables', 'physical_index': 18}, {'structure': '19.0', 'title': 'Implementation', 'physical_index': 19}, {'structure': '20.0', 'title': 'Maintenance', 'physical_index': 20}]"
+  },
+  {
+    "message": "toc_with_page_number: [{'structure': '1.0', 'title': 'Executive Summary', 'physical_index': 10}, {'structure': '2.0', 'title': 'Methodology', 'physical_index': 10}, {'structure': '3.0', 'title': 'Monthly Sales Performance', 'physical_index': 10}, {'structure': '4.0', 'title': 'Product Performance', 'physical_index': 10}, {'structure': '5.0', 'title': 'Sales Growth Trends', 'physical_index': 10}, {'structure': '6.0', 'title': 'Key Findings', 'physical_index': 11}, {'structure': '7.0', 'title': 'Customer Behavior', 'physical_index': 11}, {'structure': '8.0', 'title': 'Market Trends', 'physical_index': 11}, {'structure': '9.0', 'title': 'Recommendations', 'physical_index': 12}, {'structure': '10.0', 'title': 'Implementation Results', 'physical_index': 13}, {'structure': '11.0', 'title': 'Future Recommendations', 'physical_index': 14}, {'structure': '12.0', 'title': 'Appendices', 'physical_index': 14}, {'structure': '13.0', 'title': 'Sales Analysis Project Documentation', 'physical_index': 15}, {'structure': '14.0', 'title': 'Project Overview', 'physical_index': 15}, {'structure': '15.0', 'title': 'Data Collection & Preparation', 'physical_index': 16}, {'structure': '16.0', 'title': 'Analysis Process', 'physical_index': 16}, {'structure': '17.0', 'title': 'Quality Assurance', 'physical_index': 17}, {'structure': '18.0', 'title': 'Deliverables', 'physical_index': 18}, {'structure': '19.0', 'title': 'Implementation', 'physical_index': 19}, {'structure': '20.0', 'title': 'Maintenance', 'physical_index': 20}]"
+  },
+  {
+    "message": "Removed physical_index for 'Executive Summary' (was 10, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Methodology' (was 10, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Monthly Sales Performance' (was 10, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Product Performance' (was 10, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Sales Growth Trends' (was 10, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Key Findings' (was 11, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Customer Behavior' (was 11, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Market Trends' (was 11, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Recommendations' (was 12, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Implementation Results' (was 13, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Future Recommendations' (was 14, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Appendices' (was 14, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Sales Analysis Project Documentation' (was 15, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Project Overview' (was 15, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Data Collection & Preparation' (was 16, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Analysis Process' (was 16, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Quality Assurance' (was 17, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Deliverables' (was 18, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Implementation' (was 19, too far beyond document)"
+  },
+  {
+    "message": "Removed physical_index for 'Maintenance' (was 20, too far beyond document)"
+  },
+  {
+    "message": "Total removed items: 20"
+  },
+  {
+    "mode": "process_toc_with_page_numbers",
+    "accuracy": 0,
+    "incorrect_results": []
+  },
+  {
+    "message": "toc_transformer: [{'structure': '1.0', 'title': 'Executive Summary', 'page': 1}, {'structure': '2.0', 'title': 'Methodology', 'page': 1}, {'structure': '3.0', 'title': 'Monthly Sales Performance', 'page': 1}, {'structure': '4.0', 'title': 'Product Performance', 'page': 1}, {'structure': '5.0', 'title': 'Sales Growth Trends', 'page': 1}, {'structure': '6.0', 'title': 'Key Findings', 'page': 2}, {'structure': '7.0', 'title': 'Customer Behavior', 'page': 2}, {'structure': '8.0', 'title': 'Market Trends', 'page': 2}, {'structure': '9.0', 'title': 'Recommendations', 'page': 3}, {'structure': '10.0', 'title': 'Implementation Results', 'page': 4}, {'structure': '11.0', 'title': 'Future Recommendations', 'page': 5}, {'structure': '12.0', 'title': 'Appendices', 'page': 5}, {'structure': '13.0', 'title': 'Sales Analysis Project Documentation', 'page': 6}, {'structure': '14.0', 'title': 'Project Overview', 'page': 6}, {'structure': '15.0', 'title': 'Data Collection & Preparation', 'page': 7}, {'structure': '16.0', 'title': 'Analysis Process', 'page': 7}, {'structure': '17.0', 'title': 'Quality Assurance', 'page': 8}, {'structure': '18.0', 'title': 'Deliverables', 'page': 9}, {'structure': '19.0', 'title': 'Implementation', 'page': 10}, {'structure': '20.0', 'title': 'Maintenance', 'page': 11}]"
+  },
+  {
+    "message": "len(group_texts): 1"
+  },
+  {
+    "message": "add_page_number_to_toc: [{'structure': '1.0', 'title': 'Executive Summary', 'start_index': '1'}, {'structure': '2.0', 'title': 'Methodology', 'start_index': None}, {'structure': '3.0', 'title': 'Monthly Sales Performance', 'start_index': '1'}, {'structure': '4.0', 'title': 'Product Performance', 'start_index': None}, {'structure': '5.0', 'title': 'Sales Growth Trends', 'start_index': '1'}, {'structure': '6.0', 'title': 'Key Findings', 'start_index': None}, {'structure': '7.0', 'title': 'Customer Behavior', 'start_index': None}, {'structure': '8.0', 'title': 'Market Trends', 'start_index': None}, {'structure': '9.0', 'title': 'Recommendations', 'start_index': '1'}, {'structure': '10.0', 'title': 'Implementation Results', 'start_index': None}, {'structure': '11.0', 'title': 'Future Recommendations', 'start_index': '1'}, {'structure': '12.0', 'title': 'Appendices', 'start_index': None}, {'structure': '13.0', 'title': 'Sales Analysis Project Documentation', 'start_index': '1'}, {'structure': '14.0', 'title': 'Project Overview', 'start_index': None}, {'structure': '15.0', 'title': 'Data Collection & Preparation', 'start_index': '1'}, {'structure': '16.0', 'title': 'Analysis Process', 'start_index': None}, {'structure': '17.0', 'title': 'Quality Assurance', 'start_index': None}, {'structure': '18.0', 'title': 'Deliverables', 'start_index': '1'}, {'structure': '19.0', 'title': 'Implementation', 'start_index': None}, {'structure': '20.0', 'title': 'Maintenance', 'start_index': '1'}]"
+  },
+  {
+    "message": "convert_physical_index_to_int: [{'structure': '1.0', 'title': 'Executive Summary', 'start_index': '1'}, {'structure': '2.0', 'title': 'Methodology', 'start_index': None}, {'structure': '3.0', 'title': 'Monthly Sales Performance', 'start_index': '1'}, {'structure': '4.0', 'title': 'Product Performance', 'start_index': None}, {'structure': '5.0', 'title': 'Sales Growth Trends', 'start_index': '1'}, {'structure': '6.0', 'title': 'Key Findings', 'start_index': None}, {'structure': '7.0', 'title': 'Customer Behavior', 'start_index': None}, {'structure': '8.0', 'title': 'Market Trends', 'start_index': None}, {'structure': '9.0', 'title': 'Recommendations', 'start_index': '1'}, {'structure': '10.0', 'title': 'Implementation Results', 'start_index': None}, {'structure': '11.0', 'title': 'Future Recommendations', 'start_index': '1'}, {'structure': '12.0', 'title': 'Appendices', 'start_index': None}, {'structure': '13.0', 'title': 'Sales Analysis Project Documentation', 'start_index': '1'}, {'structure': '14.0', 'title': 'Project Overview', 'start_index': None}, {'structure': '15.0', 'title': 'Data Collection & Preparation', 'start_index': '1'}, {'structure': '16.0', 'title': 'Analysis Process', 'start_index': None}, {'structure': '17.0', 'title': 'Quality Assurance', 'start_index': None}, {'structure': '18.0', 'title': 'Deliverables', 'start_index': '1'}, {'structure': '19.0', 'title': 'Implementation', 'start_index': None}, {'structure': '20.0', 'title': 'Maintenance', 'start_index': '1'}]"
+  },
+  {
+    "mode": "process_toc_with_page_numbers",
+    "accuracy": 0,
+    "incorrect_results": []
+  },
+  {
+    "message": "len(group_texts): 1"
+  },
+  {
+    "message": "generate_toc: [{'structure': '1', 'title': 'Sales Analysis Report', 'physical_index': '<physical_index_1>'}, {'structure': '2', 'title': 'Monthly Sales Performance', 'physical_index': '<physical_index_2>'}, {'structure': '3', 'title': 'Sales Growth Trends', 'physical_index': '<physical_index_3>'}, {'structure': '4', 'title': 'Key Findings', 'physical_index': '<physical_index_4>'}, {'structure': '5', 'title': 'Recommendations', 'physical_index': '<physical_index_5>'}, {'structure': '6', 'title': 'Appendices', 'physical_index': '<physical_index_6>'}, {'structure': '7', 'title': 'Project Overview', 'physical_index': '<physical_index_7>'}]"
+  },
+  {
+    "message": "convert_physical_index_to_int: [{'structure': '1', 'title': 'Sales Analysis Report', 'physical_index': 1}, {'structure': '2', 'title': 'Monthly Sales Performance', 'physical_index': 2}, {'structure': '3', 'title': 'Sales Growth Trends', 'physical_index': 3}, {'structure': '4', 'title': 'Key Findings', 'physical_index': 4}, {'structure': '5', 'title': 'Recommendations', 'physical_index': 5}, {'structure': '6', 'title': 'Appendices', 'physical_index': 6}, {'structure': '7', 'title': 'Project Overview', 'physical_index': 7}]"
+  },
+  {
+    "mode": "process_toc_with_page_numbers",
+    "accuracy": 0.42857142857142855,
+    "incorrect_results": [
+      {
+        "list_index": 3,
+        "answer": "no",
+        "title": "Key Findings",
+        "page_number": 4
+      },
+      {
+        "list_index": 4,
+        "answer": "no",
+        "title": "Recommendations",
+        "page_number": 5
+      },
+      {
+        "list_index": 5,
+        "answer": "no",
+        "title": "Appendices",
+        "page_number": 6
+      },
+      {
+        "list_index": 6,
+        "answer": "no",
+        "title": "Project Overview",
+        "page_number": 7
+      }
+    ]
+  },
+  {
+    "message": "incorrect_results_and_range_logs: [{'list_index': 3, 'title': 'Key Findings', 'prev_correct': 3, 'next_correct': 7}, {'list_index': 4, 'title': 'Recommendations', 'prev_correct': 3, 'next_correct': 7}, {'list_index': 5, 'title': 'Appendices', 'prev_correct': 3, 'next_correct': 7}, {'list_index': 6, 'title': 'Project Overview', 'prev_correct': 3, 'next_correct': 7}]"
+  },
+  {
+    "message": "invalid_results: [{'list_index': 6, 'title': 'Key Findings', 'physical_index': 5}]"
+  },
+  {
+    "message": "incorrect_results_and_range_logs: [{'list_index': 6, 'title': 'Key Findings', 'prev_correct': 6, 'next_correct': 7}]"
+  },
+  {
+    "message": "invalid_results: []"
+  },
+  {
+    "message": "Checking title appearance in start concurrently"
+  },
+  {
+    "message": "Response: {'thinking': \"The provided text is a list of sales performance data for each month. The given section title 'Monthly Sales Performance' appears at the beginning of the page_text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Key Findings' appears at the start of the page text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Sales Growth Trends' appears at the beginning of the page text as it is the first content in the given page_text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Appendices' appears at the beginning of the page text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The section title 'Sales Analysis Report' appears at the beginning of the page text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The provided text contains the section title 'Project Overview' and it is followed by a series of content related to the project. It seems likely that the section starts in the beginning of the page_text.\", 'start_begin': 'yes'}"
+  },
+  {
+    "message": "Response: {'thinking': \"The provided text is a part of a larger document and the 'Recommendations' title appears at the start of the page. Therefore, it likely starts in the beginning of the page.\", 'start_begin': 'yes'}"
+  }
+]

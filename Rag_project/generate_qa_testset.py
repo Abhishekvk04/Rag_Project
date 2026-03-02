@@ -391,7 +391,7 @@ def main():
                         help='Directory containing tree structure JSONs')
     parser.add_argument('--model', type=str, default=DEFAULT_MODEL,
                         help='LLM model to use')
-    parser.add_argument('--output', type=str, default='qa_testset.json',
+    parser.add_argument('--output', type=str, default='qa_testset1.json',
                         help='Output JSON file path')
     parser.add_argument('--num-single', type=int, default=10,
                         help='Number of single-hop questions')
@@ -411,10 +411,10 @@ def main():
     if args.tree:
         tree_paths = args.tree
     else:
-        pattern = os.path.join(args.tree_dir, '*_structure.json')
+        pattern = os.path.join(args.tree_dir, '*_structure1.json')
         tree_paths = glob.glob(pattern)
         if not tree_paths:
-            print(f"\n❌ No *_structure.json files found in '{args.tree_dir}'")
+            print(f"\n❌ No *_structure1.json files found in '{args.tree_dir}'")
             return
     
     print(f"\n📚 Loading {len(tree_paths)} document(s)...")
